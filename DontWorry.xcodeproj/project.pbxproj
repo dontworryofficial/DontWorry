@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64AE5978224B7379008540E3 /* NSObject + reusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AE5970224B7379008540E3 /* NSObject + reusableIdentifier.swift */; };
+		64AE5979224B7379008540E3 /* CustomMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AE5972224B7379008540E3 /* CustomMenuBar.swift */; };
+		64AE597A224B7379008540E3 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64AE5974224B7379008540E3 /* CustomCell.xib */; };
+		64AE597B224B7379008540E3 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AE5975224B7379008540E3 /* CustomCell.swift */; };
+		64AE597C224B7379008540E3 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AE5976224B7379008540E3 /* PageCell.swift */; };
+		64AE597D224B7379008540E3 /* PageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64AE5977224B7379008540E3 /* PageCell.xib */; };
+		64AE598B224B73AE008540E3 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 64AE5980224B73AD008540E3 /* FMDatabaseAdditions.m */; };
+		64AE598C224B73AE008540E3 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 64AE5981224B73AD008540E3 /* FMDatabaseQueue.m */; };
+		64AE598D224B73AE008540E3 /* MainVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AE5983224B73AD008540E3 /* MainVc.swift */; };
+		64AE598E224B73AE008540E3 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 64AE5985224B73AD008540E3 /* FMDatabasePool.m */; };
+		64AE598F224B73AE008540E3 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 64AE5986224B73AD008540E3 /* FMDatabase.m */; };
+		64AE5990224B73AE008540E3 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 64AE5989224B73AE008540E3 /* FMResultSet.m */; };
+		64AE5992224B73CE008540E3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 64AE5991224B73CE008540E3 /* libsqlite3.tbd */; };
 		C7DD116B223B732B00C83798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD116A223B732B00C83798 /* AppDelegate.swift */; };
 		C7DD1170223B732B00C83798 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7DD116E223B732B00C83798 /* Main.storyboard */; };
 		C7DD1172223B732D00C83798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7DD1171223B732D00C83798 /* Assets.xcassets */; };
@@ -17,6 +30,26 @@
 
 /* Begin PBXFileReference section */
 		056CA224A0BD6A42337F54DD /* Pods-DontWorry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DontWorry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DontWorry/Pods-DontWorry.debug.xcconfig"; sourceTree = "<group>"; };
+		64AE5970224B7379008540E3 /* NSObject + reusableIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject + reusableIdentifier.swift"; sourceTree = "<group>"; };
+		64AE5972224B7379008540E3 /* CustomMenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMenuBar.swift; sourceTree = "<group>"; };
+		64AE5974224B7379008540E3 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		64AE5975224B7379008540E3 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		64AE5976224B7379008540E3 /* PageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		64AE5977224B7379008540E3 /* PageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageCell.xib; sourceTree = "<group>"; };
+		64AE597E224B73AC008540E3 /* DontWorry-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DontWorry-Bridging-Header.h"; sourceTree = "<group>"; };
+		64AE597F224B73AD008540E3 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		64AE5980224B73AD008540E3 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		64AE5981224B73AD008540E3 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		64AE5982224B73AD008540E3 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		64AE5983224B73AD008540E3 /* MainVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVc.swift; sourceTree = "<group>"; };
+		64AE5984224B73AD008540E3 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		64AE5985224B73AD008540E3 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		64AE5986224B73AD008540E3 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		64AE5987224B73AE008540E3 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		64AE5988224B73AE008540E3 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		64AE5989224B73AE008540E3 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		64AE598A224B73AE008540E3 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		64AE5991224B73CE008540E3 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		AE0C40B050991B9CEE19D375 /* Pods-DontWorry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DontWorry.release.xcconfig"; path = "Pods/Target Support Files/Pods-DontWorry/Pods-DontWorry.release.xcconfig"; sourceTree = "<group>"; };
 		BC886D16AA729326793EA303 /* Pods_DontWorry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DontWorry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7DD1167223B732B00C83798 /* DontWorry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DontWorry.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64AE5992224B73CE008540E3 /* libsqlite3.tbd in Frameworks */,
 				ECA28EA76D16FEEF86C10F29 /* Pods_DontWorry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +81,33 @@
 				AE0C40B050991B9CEE19D375 /* Pods-DontWorry.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		64AE596F224B7379008540E3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				64AE5970224B7379008540E3 /* NSObject + reusableIdentifier.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		64AE5971224B7379008540E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				64AE5972224B7379008540E3 /* CustomMenuBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		64AE5973224B7379008540E3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				64AE5974224B7379008540E3 /* CustomCell.xib */,
+				64AE5975224B7379008540E3 /* CustomCell.swift */,
+				64AE5976224B7379008540E3 /* PageCell.swift */,
+				64AE5977224B7379008540E3 /* PageCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		C7DD115E223B732B00C83798 = {
@@ -70,12 +131,28 @@
 		C7DD1169223B732B00C83798 /* DontWorry */ = {
 			isa = PBXGroup;
 			children = (
+				64AE597F224B73AD008540E3 /* FMDatabase.h */,
+				64AE5986224B73AD008540E3 /* FMDatabase.m */,
+				64AE5988224B73AE008540E3 /* FMDatabaseAdditions.h */,
+				64AE5980224B73AD008540E3 /* FMDatabaseAdditions.m */,
+				64AE5984224B73AD008540E3 /* FMDatabasePool.h */,
+				64AE5985224B73AD008540E3 /* FMDatabasePool.m */,
+				64AE598A224B73AE008540E3 /* FMDatabaseQueue.h */,
+				64AE5981224B73AD008540E3 /* FMDatabaseQueue.m */,
+				64AE5982224B73AD008540E3 /* FMDB.h */,
+				64AE5987224B73AE008540E3 /* FMResultSet.h */,
+				64AE5989224B73AE008540E3 /* FMResultSet.m */,
+				64AE5983224B73AD008540E3 /* MainVc.swift */,
+				64AE5973224B7379008540E3 /* Cells */,
+				64AE596F224B7379008540E3 /* Extensions */,
+				64AE5971224B7379008540E3 /* Views */,
 				C7DD117C223B74B900C83798 /* ViewController */,
 				C7DD116A223B732B00C83798 /* AppDelegate.swift */,
 				C7DD116E223B732B00C83798 /* Main.storyboard */,
 				C7DD1171223B732D00C83798 /* Assets.xcassets */,
 				C7DD1173223B732D00C83798 /* LaunchScreen.storyboard */,
 				C7DD1176223B732D00C83798 /* Info.plist */,
+				64AE597E224B73AC008540E3 /* DontWorry-Bridging-Header.h */,
 			);
 			path = DontWorry;
 			sourceTree = "<group>";
@@ -91,6 +168,7 @@
 		FA968CF0E6A4E1BD749BB564 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				64AE5991224B73CE008540E3 /* libsqlite3.tbd */,
 				BC886D16AA729326793EA303 /* Pods_DontWorry.framework */,
 			);
 			name = Frameworks;
@@ -130,6 +208,7 @@
 				TargetAttributes = {
 					C7DD1166223B732B00C83798 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -158,7 +237,9 @@
 			files = (
 				C7DD1175223B732D00C83798 /* LaunchScreen.storyboard in Resources */,
 				C7DD1172223B732D00C83798 /* Assets.xcassets in Resources */,
+				64AE597A224B7379008540E3 /* CustomCell.xib in Resources */,
 				C7DD1170223B732B00C83798 /* Main.storyboard in Resources */,
+				64AE597D224B7379008540E3 /* PageCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,8 +297,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64AE5978224B7379008540E3 /* NSObject + reusableIdentifier.swift in Sources */,
+				64AE598C224B73AE008540E3 /* FMDatabaseQueue.m in Sources */,
 				C7DD117E223B74C800C83798 /* MainViewController.swift in Sources */,
+				64AE597C224B7379008540E3 /* PageCell.swift in Sources */,
+				64AE598D224B73AE008540E3 /* MainVc.swift in Sources */,
+				64AE597B224B7379008540E3 /* CustomCell.swift in Sources */,
+				64AE5990224B73AE008540E3 /* FMResultSet.m in Sources */,
 				C7DD116B223B732B00C83798 /* AppDelegate.swift in Sources */,
+				64AE598E224B73AE008540E3 /* FMDatabasePool.m in Sources */,
+				64AE598B224B73AE008540E3 /* FMDatabaseAdditions.m in Sources */,
+				64AE598F224B73AE008540E3 /* FMDatabase.m in Sources */,
+				64AE5979224B7379008540E3 /* CustomMenuBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +455,7 @@
 			baseConfigurationReference = 056CA224A0BD6A42337F54DD /* Pods-DontWorry.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DontWorry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -372,6 +464,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Duny.DontWorry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DontWorry/DontWorry-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -382,6 +476,7 @@
 			baseConfigurationReference = AE0C40B050991B9CEE19D375 /* Pods-DontWorry.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DontWorry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -390,6 +485,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Duny.DontWorry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DontWorry/DontWorry-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
