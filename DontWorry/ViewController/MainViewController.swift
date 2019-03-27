@@ -23,6 +23,7 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("test11111")
 
         pieChartLoad()
         
