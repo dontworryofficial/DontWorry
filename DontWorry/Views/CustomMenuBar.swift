@@ -65,7 +65,7 @@ class CustomMenuBar: UIView {
         self.addSubview(indicatorView)
         indicatorViewWidthConstraint = indicatorView.widthAnchor.constraint(equalToConstant: self.frame.width / 4)
         indicatorViewWidthConstraint.isActive = true
-        indicatorView.heightAnchor.constraint(equalToConstant: 5).isActive = true
+        indicatorView.heightAnchor.constraint(equalToConstant: 2).isActive = true
         indicatorViewLeadingConstraint = indicatorView.leadingAnchor.constraint(equalTo: self.leadingAnchor)
         indicatorViewLeadingConstraint.isActive = true
         indicatorView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
