@@ -21,6 +21,9 @@
 		64AE5990224B73AE008540E3 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 64AE5989224B73AE008540E3 /* FMResultSet.m */; };
 		64AE5992224B73CE008540E3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 64AE5991224B73CE008540E3 /* libsqlite3.tbd */; };
 		C780C48F225DC2920063FBEC /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C780C48E225DC2920063FBEC /* ListTableViewCell.swift */; };
+		C780C491225DE0FE0063FBEC /* Input.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C780C490225DE0FE0063FBEC /* Input.storyboard */; };
+		C780C493225DE12C0063FBEC /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C780C492225DE12C0063FBEC /* CategoryCollectionViewCell.swift */; };
+		C780C495225DE15B0063FBEC /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C780C494225DE15B0063FBEC /* ExpensesViewController.swift */; };
 		C7DD116B223B732B00C83798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD116A223B732B00C83798 /* AppDelegate.swift */; };
 		C7DD1170223B732B00C83798 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7DD116E223B732B00C83798 /* Main.storyboard */; };
 		C7DD1172223B732D00C83798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7DD1171223B732D00C83798 /* Assets.xcassets */; };
@@ -63,6 +66,9 @@
 		AE0C40B050991B9CEE19D375 /* Pods-DontWorry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DontWorry.release.xcconfig"; path = "Pods/Target Support Files/Pods-DontWorry/Pods-DontWorry.release.xcconfig"; sourceTree = "<group>"; };
 		BC886D16AA729326793EA303 /* Pods_DontWorry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DontWorry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C780C48E225DC2920063FBEC /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		C780C490225DE0FE0063FBEC /* Input.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Input.storyboard; sourceTree = "<group>"; };
+		C780C492225DE12C0063FBEC /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		C780C494225DE15B0063FBEC /* ExpensesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
 		C7DD1167223B732B00C83798 /* DontWorry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DontWorry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7DD116A223B732B00C83798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7DD116F223B732B00C83798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -127,6 +133,7 @@
 				64AE5976224B7379008540E3 /* PageCell.swift */,
 				64AE5977224B7379008540E3 /* PageCell.xib */,
 				C780C48E225DC2920063FBEC /* ListTableViewCell.swift */,
+				C780C492225DE12C0063FBEC /* CategoryCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -176,6 +183,7 @@
 				D85455B8225486BE00AED539 /* CompareViewController.swift */,
 				D85455BA225486CB00AED539 /* HomeViewController.swift */,
 				D8C8EFB6225DBA100095A151 /* InputViewController.swift */,
+				C780C494225DE15B0063FBEC /* ExpensesViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -201,6 +209,7 @@
 		D85455A622547AFB00AED539 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				C780C490225DE0FE0063FBEC /* Input.storyboard */,
 				D85455B222547E6900AED539 /* Compare.storyboard */,
 				D85455B022547E2B00AED539 /* Stats.storyboard */,
 				D85455AE22547DA000AED539 /* List.storyboard */,
@@ -290,6 +299,7 @@
 				D85455B122547E2B00AED539 /* Stats.storyboard in Resources */,
 				D85455B322547E6900AED539 /* Compare.storyboard in Resources */,
 				64AE597D224B7379008540E3 /* PageCell.xib in Resources */,
+				C780C491225DE0FE0063FBEC /* Input.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,8 +367,10 @@
 				64AE597B224B7379008540E3 /* CustomCell.swift in Sources */,
 				D85455B7225486B000AED539 /* ListViewController.swift in Sources */,
 				64AE5990224B73AE008540E3 /* FMResultSet.m in Sources */,
+				C780C493225DE12C0063FBEC /* CategoryCollectionViewCell.swift in Sources */,
 				C7DD116B223B732B00C83798 /* AppDelegate.swift in Sources */,
 				D85455B5225486A400AED539 /* StatsViewController.swift in Sources */,
+				C780C495225DE15B0063FBEC /* ExpensesViewController.swift in Sources */,
 				64AE598E224B73AE008540E3 /* FMDatabasePool.m in Sources */,
 				D85455BB225486CB00AED539 /* HomeViewController.swift in Sources */,
 				64AE598B224B73AE008540E3 /* FMDatabaseAdditions.m in Sources */,
