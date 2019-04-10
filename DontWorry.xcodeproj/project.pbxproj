@@ -34,6 +34,7 @@
 		D85455B9225486BE00AED539 /* CompareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85455B8225486BE00AED539 /* CompareViewController.swift */; };
 		D85455BB225486CB00AED539 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85455BA225486CB00AED539 /* HomeViewController.swift */; };
 		D8C8EFB5225DB9930095A151 /* Input.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C8EFB4225DB9930095A151 /* Input.storyboard */; };
+		D8C8EFB7225DBA100095A151 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8EFB6225DBA100095A151 /* InputViewController.swift */; };
 		ECA28EA76D16FEEF86C10F29 /* Pods_DontWorry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC886D16AA729326793EA303 /* Pods_DontWorry.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		D85455B8225486BE00AED539 /* CompareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareViewController.swift; sourceTree = "<group>"; };
 		D85455BA225486CB00AED539 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D8C8EFB4225DB9930095A151 /* Input.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Input.storyboard; sourceTree = "<group>"; };
+		D8C8EFB6225DBA100095A151 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 				D85455B6225486B000AED539 /* ListViewController.swift */,
 				D85455B8225486BE00AED539 /* CompareViewController.swift */,
 				D85455BA225486CB00AED539 /* HomeViewController.swift */,
+				D8C8EFB6225DBA100095A151 /* InputViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				64AE598C224B73AE008540E3 /* FMDatabaseQueue.m in Sources */,
 				C7DD117E223B74C800C83798 /* MainViewController.swift in Sources */,
 				64AE597C224B7379008540E3 /* PageCell.swift in Sources */,
+				D8C8EFB7225DBA100095A151 /* InputViewController.swift in Sources */,
 				64AE598D224B73AE008540E3 /* MainVc.swift in Sources */,
 				64AE597B224B7379008540E3 /* CustomCell.swift in Sources */,
 				D85455B7225486B000AED539 /* ListViewController.swift in Sources */,
