@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--돈 플랜-->
+        <scene sceneID="huF-sd-JxD">
+            <objects>
+                <viewController id="jwS-cO-C36" customClass="MainViewController" customModule="DontWorry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i4Z-BN-KB7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEO-v2-BHm">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="shT-O9-fHl"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="jrJ-Fd-lZy"/>
+                                    <barButtonItem title="홈" id="B2A-MP-Zdh"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="1m6-Nh-H6g"/>
+                                    <barButtonItem title="내역" id="LDO-WV-dGp"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="2qD-WS-jlU"/>
+                                    <barButtonItem title="통계" id="Yz8-D5-WIw"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="2xZ-w4-Lmy"/>
+                                    <barButtonItem title="비교" id="LUG-CP-153"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="lZP-gv-5yH"/>
+                                </items>
+                            </toolbar>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LgS-In-ADq">
+                                <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                                <connections>
+                                    <segue destination="tvU-xA-mHF" kind="embed" id="g0v-Kh-ZeH"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLh-6y-xJT">
+                                <rect key="frame" x="168" y="627" width="39" height="30"/>
+                                <state key="normal" title="플러스"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LgS-In-ADq" firstAttribute="trailing" secondItem="AhM-Iw-F3k" secondAttribute="trailing" id="AuY-Q5-2XV"/>
+                            <constraint firstItem="KEO-v2-BHm" firstAttribute="leading" secondItem="AhM-Iw-F3k" secondAttribute="leading" id="HoS-kk-OO8"/>
+                            <constraint firstItem="LgS-In-ADq" firstAttribute="top" secondItem="KEO-v2-BHm" secondAttribute="bottom" id="INA-HI-wEl"/>
+                            <constraint firstItem="KEO-v2-BHm" firstAttribute="top" secondItem="AhM-Iw-F3k" secondAttribute="top" id="Ilf-hs-8cs"/>
+                            <constraint firstItem="xLh-6y-xJT" firstAttribute="centerX" secondItem="i4Z-BN-KB7" secondAttribute="centerX" id="Kdw-la-CGA"/>
+                            <constraint firstItem="KEO-v2-BHm" firstAttribute="trailing" secondItem="AhM-Iw-F3k" secondAttribute="trailing" id="LfQ-6s-o9n"/>
+                            <constraint firstAttribute="bottom" secondItem="LgS-In-ADq" secondAttribute="bottom" id="eWM-GQ-g65"/>
+                            <constraint firstItem="LgS-In-ADq" firstAttribute="leading" secondItem="AhM-Iw-F3k" secondAttribute="leading" id="lD6-mS-jS9"/>
+                            <constraint firstItem="AhM-Iw-F3k" firstAttribute="bottom" secondItem="xLh-6y-xJT" secondAttribute="bottom" constant="10" id="shS-TW-eL4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AhM-Iw-F3k"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="돈 플랜" id="XbX-G5-7lB">
+                        <rightBarButtonItems>
+                            <barButtonItem title="설정" id="DLl-DN-eOe"/>
+                            <barButtonItem title="계산기" id="F8u-Nn-3Mf"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="21o-Ds-FiE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1848.8" y="685.90704647676171"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iqO-S9-61L">
+            <objects>
+                <viewController id="tvU-xA-mHF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yFS-n1-Rcz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="f4T-8D-JMc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FzN-2e-kNB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1572" y="1344"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dWy-NN-07v">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GOm-FX-yEb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TUu-ff-lYh">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jwS-cO-C36" kind="relationship" relationship="rootViewController" id="yB7-HX-ACp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dbC-wM-8gZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="909.60000000000002" y="685.90704647676171"/>
+        </scene>
+    </scenes>
+</document>
