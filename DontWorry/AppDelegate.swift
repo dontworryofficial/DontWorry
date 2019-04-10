@@ -12,20 +12,19 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        
+
+
         // 1) Info.plist 에서 Main storyboard file base name  항목을 지우고
         
         // 2) Main.storyboard를 삭제하고 앱 실행시 MainVC.swift 파일을 띄움
-        
-        window = UIWindow()
-        window?.makeKeyAndVisible()
-        window?.rootViewController = UINavigationController(rootViewController: MainVC())
-        
+
+       // window = UIWindow()
+        //window?.makeKeyAndVisible()
+        //window?.rootViewController = UINavigationController(rootViewController: MainViewController())
+
         return true
     }
 

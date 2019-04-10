@@ -25,6 +25,14 @@
 		C7DD1172223B732D00C83798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7DD1171223B732D00C83798 /* Assets.xcassets */; };
 		C7DD1175223B732D00C83798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7DD1173223B732D00C83798 /* LaunchScreen.storyboard */; };
 		C7DD117E223B74C800C83798 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD117D223B74C800C83798 /* MainViewController.swift */; };
+		D85455AD22547C8600AED539 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85455AC22547C8600AED539 /* Home.storyboard */; };
+		D85455AF22547DA000AED539 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85455AE22547DA000AED539 /* List.storyboard */; };
+		D85455B122547E2B00AED539 /* Stats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85455B022547E2B00AED539 /* Stats.storyboard */; };
+		D85455B322547E6900AED539 /* Compare.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85455B222547E6900AED539 /* Compare.storyboard */; };
+		D85455B5225486A400AED539 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85455B4225486A400AED539 /* StatsViewController.swift */; };
+		D85455B7225486B000AED539 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85455B6225486B000AED539 /* ListViewController.swift */; };
+		D85455B9225486BE00AED539 /* CompareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85455B8225486BE00AED539 /* CompareViewController.swift */; };
+		D85455BB225486CB00AED539 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85455BA225486CB00AED539 /* HomeViewController.swift */; };
 		ECA28EA76D16FEEF86C10F29 /* Pods_DontWorry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC886D16AA729326793EA303 /* Pods_DontWorry.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +67,14 @@
 		C7DD1174223B732D00C83798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7DD1176223B732D00C83798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7DD117D223B74C800C83798 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D85455AC22547C8600AED539 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		D85455AE22547DA000AED539 /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
+		D85455B022547E2B00AED539 /* Stats.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Stats.storyboard; sourceTree = "<group>"; };
+		D85455B222547E6900AED539 /* Compare.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Compare.storyboard; sourceTree = "<group>"; };
+		D85455B4225486A400AED539 /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		D85455B6225486B000AED539 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		D85455B8225486BE00AED539 /* CompareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareViewController.swift; sourceTree = "<group>"; };
+		D85455BA225486CB00AED539 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +147,36 @@
 		C7DD1169223B732B00C83798 /* DontWorry */ = {
 			isa = PBXGroup;
 			children = (
+				64AE597E224B73AC008540E3 /* DontWorry-Bridging-Header.h */,
+				D81B22AF2255D40200FFBE96 /* DB */,
+				D85455A622547AFB00AED539 /* Storyboard */,
+				64AE5983224B73AD008540E3 /* MainVc.swift */,
+				64AE5973224B7379008540E3 /* Cells */,
+				64AE596F224B7379008540E3 /* Extensions */,
+				64AE5971224B7379008540E3 /* Views */,
+				C7DD117C223B74B900C83798 /* ViewController */,
+				C7DD116A223B732B00C83798 /* AppDelegate.swift */,
+				C7DD1171223B732D00C83798 /* Assets.xcassets */,
+				C7DD1176223B732D00C83798 /* Info.plist */,
+			);
+			path = DontWorry;
+			sourceTree = "<group>";
+		};
+		C7DD117C223B74B900C83798 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C7DD117D223B74C800C83798 /* MainViewController.swift */,
+				D85455B4225486A400AED539 /* StatsViewController.swift */,
+				D85455B6225486B000AED539 /* ListViewController.swift */,
+				D85455B8225486BE00AED539 /* CompareViewController.swift */,
+				D85455BA225486CB00AED539 /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D81B22AF2255D40200FFBE96 /* DB */ = {
+			isa = PBXGroup;
+			children = (
 				64AE597F224B73AD008540E3 /* FMDatabase.h */,
 				64AE5986224B73AD008540E3 /* FMDatabase.m */,
 				64AE5988224B73AE008540E3 /* FMDatabaseAdditions.h */,
@@ -142,27 +188,21 @@
 				64AE5982224B73AD008540E3 /* FMDB.h */,
 				64AE5987224B73AE008540E3 /* FMResultSet.h */,
 				64AE5989224B73AE008540E3 /* FMResultSet.m */,
-				64AE5983224B73AD008540E3 /* MainVc.swift */,
-				64AE5973224B7379008540E3 /* Cells */,
-				64AE596F224B7379008540E3 /* Extensions */,
-				64AE5971224B7379008540E3 /* Views */,
-				C7DD117C223B74B900C83798 /* ViewController */,
-				C7DD116A223B732B00C83798 /* AppDelegate.swift */,
-				C7DD116E223B732B00C83798 /* Main.storyboard */,
-				C7DD1171223B732D00C83798 /* Assets.xcassets */,
-				C7DD1173223B732D00C83798 /* LaunchScreen.storyboard */,
-				C7DD1176223B732D00C83798 /* Info.plist */,
-				64AE597E224B73AC008540E3 /* DontWorry-Bridging-Header.h */,
 			);
-			path = DontWorry;
+			path = DB;
 			sourceTree = "<group>";
 		};
-		C7DD117C223B74B900C83798 /* ViewController */ = {
+		D85455A622547AFB00AED539 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				C7DD117D223B74C800C83798 /* MainViewController.swift */,
+				D85455B222547E6900AED539 /* Compare.storyboard */,
+				D85455B022547E2B00AED539 /* Stats.storyboard */,
+				D85455AE22547DA000AED539 /* List.storyboard */,
+				D85455AC22547C8600AED539 /* Home.storyboard */,
+				C7DD1173223B732D00C83798 /* LaunchScreen.storyboard */,
+				C7DD116E223B732B00C83798 /* Main.storyboard */,
 			);
-			path = ViewController;
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		FA968CF0E6A4E1BD749BB564 /* Frameworks */ = {
@@ -236,9 +276,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7DD1175223B732D00C83798 /* LaunchScreen.storyboard in Resources */,
+				D85455AF22547DA000AED539 /* List.storyboard in Resources */,
 				C7DD1172223B732D00C83798 /* Assets.xcassets in Resources */,
 				64AE597A224B7379008540E3 /* CustomCell.xib in Resources */,
+				D85455AD22547C8600AED539 /* Home.storyboard in Resources */,
 				C7DD1170223B732B00C83798 /* Main.storyboard in Resources */,
+				D85455B122547E2B00AED539 /* Stats.storyboard in Resources */,
+				D85455B322547E6900AED539 /* Compare.storyboard in Resources */,
 				64AE597D224B7379008540E3 /* PageCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,10 +347,14 @@
 				64AE597C224B7379008540E3 /* PageCell.swift in Sources */,
 				64AE598D224B73AE008540E3 /* MainVc.swift in Sources */,
 				64AE597B224B7379008540E3 /* CustomCell.swift in Sources */,
+				D85455B7225486B000AED539 /* ListViewController.swift in Sources */,
 				64AE5990224B73AE008540E3 /* FMResultSet.m in Sources */,
 				C7DD116B223B732B00C83798 /* AppDelegate.swift in Sources */,
+				D85455B5225486A400AED539 /* StatsViewController.swift in Sources */,
 				64AE598E224B73AE008540E3 /* FMDatabasePool.m in Sources */,
+				D85455BB225486CB00AED539 /* HomeViewController.swift in Sources */,
 				64AE598B224B73AE008540E3 /* FMDatabaseAdditions.m in Sources */,
+				D85455B9225486BE00AED539 /* CompareViewController.swift in Sources */,
 				64AE598F224B73AE008540E3 /* FMDatabase.m in Sources */,
 				64AE5979224B7379008540E3 /* CustomMenuBar.swift in Sources */,
 			);
