@@ -8,23 +8,38 @@
 
 import UIKit
 
-class ListViewController: UIViewController {
-
+class ListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var listTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.listTableView.dataSource = self
+        self.listTableView.delegate = self
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - List Table View
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let index: Int = indexPath.row
+        
+        if index == 0 {
+            let cell: TotalCell = self.listTableView.dequeueReusableCell(withIdentifier: "TotalCell", for: indexPath) as! TotalCell
+            return cell
+        } else if index == 1 {
+            let cell: DateCell = self.listTableView.dequeueReusableCell(withIdentifier: "DateCell", for: indexPath) as! DateCell
+            return cell
+        } else {
+            let cell: DateDetailCell = self.listTableView.dequeueReusableCell(withIdentifier: "DateDetailCell", for: indexPath) as! DateDetailCell
+            return cell
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 55
+    }
 }
