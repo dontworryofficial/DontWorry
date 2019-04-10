@@ -33,6 +33,7 @@
 		D85455B7225486B000AED539 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85455B6225486B000AED539 /* ListViewController.swift */; };
 		D85455B9225486BE00AED539 /* CompareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85455B8225486BE00AED539 /* CompareViewController.swift */; };
 		D85455BB225486CB00AED539 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85455BA225486CB00AED539 /* HomeViewController.swift */; };
+		D8C8EFB5225DB9930095A151 /* Input.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C8EFB4225DB9930095A151 /* Input.storyboard */; };
 		ECA28EA76D16FEEF86C10F29 /* Pods_DontWorry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC886D16AA729326793EA303 /* Pods_DontWorry.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		D85455B6225486B000AED539 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		D85455B8225486BE00AED539 /* CompareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareViewController.swift; sourceTree = "<group>"; };
 		D85455BA225486CB00AED539 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D8C8EFB4225DB9930095A151 /* Input.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Input.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 		D85455A622547AFB00AED539 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				D8C8EFB4225DB9930095A151 /* Input.storyboard */,
 				D85455B222547E6900AED539 /* Compare.storyboard */,
 				D85455B022547E2B00AED539 /* Stats.storyboard */,
 				D85455AE22547DA000AED539 /* List.storyboard */,
@@ -284,6 +287,7 @@
 				D85455B122547E2B00AED539 /* Stats.storyboard in Resources */,
 				D85455B322547E6900AED539 /* Compare.storyboard in Resources */,
 				64AE597D224B7379008540E3 /* PageCell.xib in Resources */,
+				D8C8EFB5225DB9930095A151 /* Input.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
