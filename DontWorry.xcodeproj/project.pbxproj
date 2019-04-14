@@ -29,6 +29,8 @@
 		C7DD1172223B732D00C83798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7DD1171223B732D00C83798 /* Assets.xcassets */; };
 		C7DD1175223B732D00C83798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7DD1173223B732D00C83798 /* LaunchScreen.storyboard */; };
 		C7DD117E223B74C800C83798 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD117D223B74C800C83798 /* MainViewController.swift */; };
+		D81CAB4E226312EA0095C6E7 /* IncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81CAB4D226312EA0095C6E7 /* IncomeViewController.swift */; };
+		D81CAB50226315BC0095C6E7 /* IncomeCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81CAB4F226315BC0095C6E7 /* IncomeCategoryCollectionViewCell.swift */; };
 		D85455AD22547C8600AED539 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85455AC22547C8600AED539 /* Home.storyboard */; };
 		D85455AF22547DA000AED539 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85455AE22547DA000AED539 /* List.storyboard */; };
 		D85455B122547E2B00AED539 /* Stats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85455B022547E2B00AED539 /* Stats.storyboard */; };
@@ -76,6 +78,8 @@
 		C7DD1174223B732D00C83798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7DD1176223B732D00C83798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7DD117D223B74C800C83798 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D81CAB4D226312EA0095C6E7 /* IncomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeViewController.swift; sourceTree = "<group>"; };
+		D81CAB4F226315BC0095C6E7 /* IncomeCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		D85455AC22547C8600AED539 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		D85455AE22547DA000AED539 /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
 		D85455B022547E2B00AED539 /* Stats.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Stats.storyboard; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 				64AE5977224B7379008540E3 /* PageCell.xib */,
 				C780C48E225DC2920063FBEC /* ListTableViewCell.swift */,
 				C780C492225DE12C0063FBEC /* CategoryCollectionViewCell.swift */,
+				D81CAB4F226315BC0095C6E7 /* IncomeCategoryCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -184,6 +189,7 @@
 				D85455BA225486CB00AED539 /* HomeViewController.swift */,
 				D8C8EFB6225DBA100095A151 /* InputViewController.swift */,
 				C780C494225DE15B0063FBEC /* ExpensesViewController.swift */,
+				D81CAB4D226312EA0095C6E7 /* IncomeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -209,8 +215,8 @@
 		D85455A622547AFB00AED539 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				C780C490225DE0FE0063FBEC /* Input.storyboard */,
 				D85455B222547E6900AED539 /* Compare.storyboard */,
+				C780C490225DE0FE0063FBEC /* Input.storyboard */,
 				D85455B022547E2B00AED539 /* Stats.storyboard */,
 				D85455AE22547DA000AED539 /* List.storyboard */,
 				D85455AC22547C8600AED539 /* Home.storyboard */,
@@ -375,6 +381,8 @@
 				D85455BB225486CB00AED539 /* HomeViewController.swift in Sources */,
 				64AE598B224B73AE008540E3 /* FMDatabaseAdditions.m in Sources */,
 				D85455B9225486BE00AED539 /* CompareViewController.swift in Sources */,
+				D81CAB4E226312EA0095C6E7 /* IncomeViewController.swift in Sources */,
+				D81CAB50226315BC0095C6E7 /* IncomeCategoryCollectionViewCell.swift in Sources */,
 				64AE598F224B73AE008540E3 /* FMDatabase.m in Sources */,
 				64AE5979224B7379008540E3 /* CustomMenuBar.swift in Sources */,
 			);
