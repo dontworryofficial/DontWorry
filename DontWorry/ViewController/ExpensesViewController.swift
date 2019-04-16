@@ -16,13 +16,25 @@ class ExpensesViewController: UIViewController {
 
     @IBAction func paymentChanged(_ sender: UIButton) {
         
-        var alert = UIAlertController(title: "결제방식", message: nil, preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "결제방식", message: nil, preferredStyle: .actionSheet)
+        
         let creditCard = UIAlertAction(title: "신용카드", style: .default) { (UIAlertAction) in
             self.paymentBtn.titleLabel?.text = "신용카드"
         }
+        
+        let checkCard = UIAlertAction(title: "체크카드", style: .default) { (UIAlertAction) in
+            self.paymentBtn.titleLabel?.text = "체크카드"
+        }
+        
+        let cash = UIAlertAction(title: "현금", style: .default) { (UIAlertAction) in
+            self.paymentBtn.titleLabel?.text = "현금"
+        }
+        
         let cancel = UIAlertAction(title: "취소", style: .cancel, handler: nil)
         
         alert.addAction(creditCard)
+        alert.addAction(checkCard)
+        alert.addAction(cash)
         alert.addAction(cancel)
         
         present(alert, animated: false, completion: nil)
