@@ -21,7 +21,7 @@ class MainViewController: UIViewController {
         settingButton.setImage(#imageLiteral(resourceName: "setting"), for: UIControl.State.normal)
         settingButton.tintColor = UIColor.black
         settingButton.frame = CGRect(x: 0, y: 0, width: 1, height: 1)
-       
+        settingButton.addTarget(self, action: #selector(moveToSetting), for: UIControl.Event.touchUpInside)
         
         let helpButton = UIButton(type: UIButton.ButtonType.custom)
         helpButton.setImage(#imageLiteral(resourceName: "help"), for: UIControl.State.normal)
@@ -33,6 +33,8 @@ class MainViewController: UIViewController {
         self.navigationItem.rightBarButtonItems = [settingMenuBarItem, helpMenuBarItem]
     }
     
+    
+    // MARK: - Action
     @IBAction func homeSelected() {
         self.homeView.alpha = 1
         self.listView.alpha = 0
@@ -59,5 +61,13 @@ class MainViewController: UIViewController {
         self.listView.alpha = 0
         self.statsView.alpha = 0
         self.compareView.alpha = 1
+    }
+    
+    @objc func moveToSetting() {
+        let settingStoryBoard = UIStoryboard.init(name: "Setting", bundle: nil)
+        
+        let settingVc = settingStoryBoard.instantiateViewController(withIdentifier: "Setting") as! SettingTableViewController
+        
+        self.navigationController?.pushViewController(settingVc, animated: true)
     }
 }

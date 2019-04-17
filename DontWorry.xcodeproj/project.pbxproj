@@ -24,6 +24,8 @@
 		C780C491225DE0FE0063FBEC /* Input.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C780C490225DE0FE0063FBEC /* Input.storyboard */; };
 		C780C493225DE12C0063FBEC /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C780C492225DE12C0063FBEC /* CategoryCollectionViewCell.swift */; };
 		C780C495225DE15B0063FBEC /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C780C494225DE15B0063FBEC /* ExpensesViewController.swift */; };
+		C791C2C72267149D00C89DC0 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C791C2C62267149D00C89DC0 /* Setting.storyboard */; };
+		C791C2C922671F6600C89DC0 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C791C2C822671F6600C89DC0 /* SettingTableViewController.swift */; };
 		C7DD116B223B732B00C83798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD116A223B732B00C83798 /* AppDelegate.swift */; };
 		C7DD1170223B732B00C83798 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7DD116E223B732B00C83798 /* Main.storyboard */; };
 		C7DD1172223B732D00C83798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7DD1171223B732D00C83798 /* Assets.xcassets */; };
@@ -71,6 +73,8 @@
 		C780C490225DE0FE0063FBEC /* Input.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Input.storyboard; sourceTree = "<group>"; };
 		C780C492225DE12C0063FBEC /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		C780C494225DE15B0063FBEC /* ExpensesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
+		C791C2C62267149D00C89DC0 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		C791C2C822671F6600C89DC0 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		C7DD1167223B732B00C83798 /* DontWorry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DontWorry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7DD116A223B732B00C83798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7DD116F223B732B00C83798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -190,6 +194,7 @@
 				D8C8EFB6225DBA100095A151 /* InputViewController.swift */,
 				C780C494225DE15B0063FBEC /* ExpensesViewController.swift */,
 				D81CAB4D226312EA0095C6E7 /* IncomeViewController.swift */,
+				C791C2C822671F6600C89DC0 /* SettingTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 				D85455AC22547C8600AED539 /* Home.storyboard */,
 				C7DD1173223B732D00C83798 /* LaunchScreen.storyboard */,
 				C7DD116E223B732B00C83798 /* Main.storyboard */,
+				C791C2C62267149D00C89DC0 /* Setting.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -305,6 +311,7 @@
 				D85455B122547E2B00AED539 /* Stats.storyboard in Resources */,
 				D85455B322547E6900AED539 /* Compare.storyboard in Resources */,
 				64AE597D224B7379008540E3 /* PageCell.xib in Resources */,
+				C791C2C72267149D00C89DC0 /* Setting.storyboard in Resources */,
 				C780C491225DE0FE0063FBEC /* Input.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +385,7 @@
 				D85455B5225486A400AED539 /* StatsViewController.swift in Sources */,
 				C780C495225DE15B0063FBEC /* ExpensesViewController.swift in Sources */,
 				64AE598E224B73AE008540E3 /* FMDatabasePool.m in Sources */,
+				C791C2C922671F6600C89DC0 /* SettingTableViewController.swift in Sources */,
 				D85455BB225486CB00AED539 /* HomeViewController.swift in Sources */,
 				64AE598B224B73AE008540E3 /* FMDatabaseAdditions.m in Sources */,
 				D85455B9225486BE00AED539 /* CompareViewController.swift in Sources */,
