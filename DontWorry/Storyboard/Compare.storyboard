@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cdk-4Q-UHd">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,15 +15,56 @@
             <objects>
                 <viewController id="cdk-4Q-UHd" customClass="CompareViewController" customModule="DontWorry" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="75o-RZ-ApK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.88528173580000002" green="0.016573989609999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fWH-5y-QIq">
+                                <rect key="frame" x="0.0" y="44" width="414" height="88"/>
+                                <color key="backgroundColor" red="1" green="0.75294117650000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="SDZ-Iw-e39"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qFT-Sp-hHN">
+                                <rect key="frame" x="0.0" y="132" width="414" height="730"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I7J-gH-hlC" customClass="BarChartView" customModule="Charts">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="730"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="730" id="4WH-kr-axG"/>
+                                            <constraint firstAttribute="width" constant="414" id="DKF-T4-tyq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="I7J-gH-hlC" firstAttribute="top" secondItem="qFT-Sp-hHN" secondAttribute="top" id="8Kc-Lz-M7q"/>
+                                    <constraint firstItem="I7J-gH-hlC" firstAttribute="leading" secondItem="qFT-Sp-hHN" secondAttribute="leading" id="HB9-H7-WgI"/>
+                                    <constraint firstAttribute="bottom" secondItem="I7J-gH-hlC" secondAttribute="bottom" id="TBp-09-IPb"/>
+                                    <constraint firstAttribute="trailing" secondItem="I7J-gH-hlC" secondAttribute="trailing" id="qHe-cZ-A9x"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fWH-5y-QIq" firstAttribute="leading" secondItem="V4u-ZV-wvq" secondAttribute="leading" id="0Uv-vJ-V4W"/>
+                            <constraint firstItem="qFT-Sp-hHN" firstAttribute="leading" secondItem="V4u-ZV-wvq" secondAttribute="leading" id="Lw8-h5-ody"/>
+                            <constraint firstItem="qFT-Sp-hHN" firstAttribute="top" secondItem="fWH-5y-QIq" secondAttribute="bottom" id="MXr-hq-Ehm"/>
+                            <constraint firstItem="fWH-5y-QIq" firstAttribute="top" secondItem="V4u-ZV-wvq" secondAttribute="top" id="oX1-iF-Q5F"/>
+                            <constraint firstItem="qFT-Sp-hHN" firstAttribute="centerX" secondItem="75o-RZ-ApK" secondAttribute="centerX" id="r1n-M8-9Hd"/>
+                            <constraint firstItem="V4u-ZV-wvq" firstAttribute="trailing" secondItem="qFT-Sp-hHN" secondAttribute="trailing" id="sQD-Id-pv1"/>
+                            <constraint firstItem="fWH-5y-QIq" firstAttribute="trailing" secondItem="V4u-ZV-wvq" secondAttribute="trailing" id="xRQ-nc-3Tl"/>
+                            <constraint firstItem="V4u-ZV-wvq" firstAttribute="bottom" secondItem="qFT-Sp-hHN" secondAttribute="bottom" id="xWV-UI-TXU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="V4u-ZV-wvq"/>
                     </view>
+                    <connections>
+                        <outlet property="barChartView" destination="I7J-gH-hlC" id="agA-cY-Aoo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4H3-Yf-WVz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2554" y="1128"/>
+            <point key="canvasLocation" x="2553.6231884057975" y="1127.6785714285713"/>
         </scene>
     </scenes>
 </document>
