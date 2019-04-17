@@ -16,6 +16,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
         self.listTableView.dataSource = self
         self.listTableView.delegate = self
+        
     }
     
 
