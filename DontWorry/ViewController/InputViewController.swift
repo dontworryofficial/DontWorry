@@ -14,6 +14,7 @@ class InputViewController: UIViewController {
         
     }
     
+    //지출/수입 전환 세그먼트
     @IBAction func segmentChanged(_ sender: UISegmentedControl) {
         if inputSegment.selectedSegmentIndex == 0 {
             expensesView.alpha = 1
@@ -25,23 +26,17 @@ class InputViewController: UIViewController {
         }
     }
     
+    //네비게이션 커스텀
     private func customNavigationItems(){
         
         let title = UILabel(frame: CGRect(x: 0, y: 0, width: 34, height: 34))
         title.text = "지출/수입"
         navigationItem.titleView = title
         
-        let backBtn = UIButton(type: .custom)
-        backBtn.setImage(#imageLiteral(resourceName: "back").withRenderingMode(.alwaysOriginal), for: .normal)
-        backBtn.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
-        backBtn.addTarget(self, action: #selector(self.backAction(_:)), for: UIControl.Event.touchUpInside)
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backBtn)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "취소", style: .plain, target: self, action: #selector(self.backAction(_:)))
         
         
-        let plusBtn = UIButton(type: .system)
-        plusBtn.setImage(#imageLiteral(resourceName: "add").withRenderingMode(.alwaysOriginal), for: .normal)
-        plusBtn.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: plusBtn)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "완료", style: .plain, target: self, action: nil)
         
     }
     

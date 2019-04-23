@@ -12,14 +12,27 @@ class IncomeViewController: UIViewController {
     
    
     @IBOutlet weak var IncomeCollectionView: UICollectionView!
+    @IBOutlet weak var dateTextField: UITextField!
+    
+    private var datePicker = UIDatePicker()
+    let date = Date()
+    let dateformatter = DateFormatter()
     
     
     override func viewDidLoad() {
-
+        super.viewDidLoad()
         self.IncomeCollectionView.dataSource = self
         
-        super.viewDidLoad()
+        self.dateformatter.dateFormat = "yyyy년 MM월 dd일 a HH:mm"
+        dateTextField.borderStyle = .none
+        dateTextField.tintColor = UIColor.clear
+        dateTextField.text = dateformatter.string(from: date)
+        
     }
+    
+//    func dateSet() {
+//
+//    }
 }
 
 extension IncomeViewController : UICollectionViewDataSource {
@@ -35,7 +48,17 @@ extension IncomeViewController : UICollectionViewDataSource {
         
         return cell
     }
-    
-        
+}
 
+extension UIToolbar {
+    func ToolbarPicker(mySelct : Selector) -> UIToolbar {
+        let toolbar = UIToolbar()
+        toolbar.barStyle = UIBarStyle.default
+        toolbar.isTranslucent = true
+        toolbar.tintColor = UIColor.black
+        toolbar.sizeToFit()
+        
+        
+        return toolbar
+    }
 }

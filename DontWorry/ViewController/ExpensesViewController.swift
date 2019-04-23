@@ -7,40 +7,45 @@ class ExpensesViewController: UIViewController {
     @IBOutlet weak var paymentBtn: UIButton!
     @IBOutlet weak var dateTextField: UITextField!
     
-    private var datePicker : UIDatePicker?
+    private var datePicker = UIDatePicker()
     let date = Date()
     let dateformatter = DateFormatter()
     
     override func viewDidLoad() {
-        
-        self.categoryCollectionView.dataSource = self
         super.viewDidLoad()
         
+        self.categoryCollectionView.dataSource = self
         self.dateformatter.dateFormat = "yyyy년 MM월 dd일 a H:mm"
+        
         let stringDate = dateformatter.string(from: date)
         dateTextField.text = stringDate
         
+        dateTextField.borderStyle = .none
+        dateTextField.tintColor = UIColor.clear
+        
         dateSet()
-        
-        
     }
     
     func dateSet(){
         
-        dateTextField.borderStyle = .none
-        
-        datePicker = UIDatePicker()
-        datePicker?.datePickerMode = .dateAndTime
+        let toolbar = UIToolbar().ToolbarPicker(mySelect: #selector(ExpensesViewController.dateDone))
+        dateTextField.inputAccessoryView = toolbar
 
-        view.endEditing(true)
-        
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ExpensesViewController.viewtapped))
-        
-        view.addGestureRecognizer(tapGesture)
+        datePicker = UIDatePicker()
+        datePicker.datePickerMode = .dateAndTime
         
         dateTextField.inputView = datePicker
+        dateTextField.text = dateformatter.string(from: datePicker.date)
         
-        dateTextField.text = dateformatter.string(from: datePicker!.date)
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ExpensesViewController.viewtapped))
+        view.addGestureRecognizer(tapGesture)
+        
+        
+    }
+    
+    @objc func dateDone(){
+        dateTextField.text = dateformatter.string(from: datePicker.date)
+        view.endEditing(true)
     }
     
     @objc func viewtapped(gesture: UITapGestureRecognizer) {
@@ -80,6 +85,7 @@ class ExpensesViewController: UIViewController {
 }
 
 
+//카테고리 컬렉션뷰
 extension ExpensesViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
@@ -92,4 +98,24 @@ extension ExpensesViewController: UICollectionViewDataSource {
     }
     
     
+}
+
+//완료버튼 toolbar
+extension UIToolbar {
+    func ToolbarPicker(mySelect : Selector) -> UIToolbar {
+        let toolbar = UIToolbar()
+        
+        toolbar.barStyle = UIBarStyle.default
+        toolbar.isTranslucent = true
+        toolbar.tintColor = UIColor.black
+        toolbar.sizeToFit()
+        
+        let doneBtn = UIBarButtonItem(title: "완료", style: UIBarButtonItem.Style.plain, target: self, action: mySelect)
+        let spaceBtn = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+        
+        toolbar.setItems([spaceBtn,doneBtn], animated: false)
+        toolbar.isUserInteractionEnabled = true
+        
+        return toolbar
+    }
 }
