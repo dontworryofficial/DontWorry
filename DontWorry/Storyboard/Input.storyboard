@@ -118,12 +118,10 @@
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="dateFieldClicked:" destination="Sow-FZ-jDj" eventType="editingDidEnd" id="cwV-hi-Iux"/>
+                                </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="428-kB-eaC">
-                                <rect key="frame" x="203" y="72.5" width="156" height="38"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="금액을 입력하세요."/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결제방식" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rL-bZ-jkn">
                                 <rect key="frame" x="16" y="147" width="59" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -233,23 +231,33 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pWI-Kt-GuK">
                                 <rect key="frame" x="26" y="333.5" width="323" height="259.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="금액을 입력하세요." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="arz-DY-hAB">
+                                <rect key="frame" x="190" y="76" width="185" height="31"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="moneyChanged:" destination="Sow-FZ-jDj" eventType="editingDidEnd" id="kFl-z5-x4g"/>
+                                    <action selector="moneyDidBegin:" destination="Sow-FZ-jDj" eventType="editingDidBegin" id="U14-Bj-03g"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="428-kB-eaC" secondAttribute="trailing" id="6a2-sk-Z7z"/>
                             <constraint firstItem="2rL-bZ-jkn" firstAttribute="top" secondItem="OR1-fz-EuA" secondAttribute="bottom" constant="14" id="7ad-GH-8Db"/>
                             <constraint firstAttribute="trailing" secondItem="R01-Ic-WFA" secondAttribute="trailing" constant="14" id="9qv-W0-CWQ"/>
                             <constraint firstAttribute="trailing" secondItem="rEn-2l-yYj" secondAttribute="trailing" constant="10" id="FVo-Fz-JDy"/>
                             <constraint firstItem="tum-QW-SAH" firstAttribute="top" secondItem="IiA-Gz-HQb" secondAttribute="bottom" constant="14" id="FYy-JN-J1g"/>
                             <constraint firstItem="lkS-ee-7Rc" firstAttribute="top" secondItem="R01-Ic-WFA" secondAttribute="bottom" constant="14" id="KG5-XG-cWQ"/>
                             <constraint firstItem="50f-DI-USl" firstAttribute="top" secondItem="TXi-1b-mkQ" secondAttribute="bottom" constant="30" id="Lby-bm-xa1"/>
+                            <constraint firstItem="arz-DY-hAB" firstAttribute="centerY" secondItem="50f-DI-USl" secondAttribute="centerY" id="Ljc-H6-tHV"/>
                             <constraint firstItem="OR1-fz-EuA" firstAttribute="leading" secondItem="Fux-0d-lGS" secondAttribute="leading" id="MDh-XP-76k"/>
                             <constraint firstAttribute="trailing" secondItem="IiA-Gz-HQb" secondAttribute="trailing" id="Mi8-f8-r8V"/>
                             <constraint firstItem="rEn-2l-yYj" firstAttribute="top" secondItem="mZJ-e6-9rE" secondAttribute="bottom" constant="5" id="QKk-2c-LVH"/>
+                            <constraint firstItem="arz-DY-hAB" firstAttribute="trailing" secondItem="Fux-0d-lGS" secondAttribute="trailingMargin" constant="16" id="QUf-Ew-faJ"/>
                             <constraint firstItem="TXi-1b-mkQ" firstAttribute="top" secondItem="RgL-Wl-rmf" secondAttribute="bottom" constant="14" id="Qtl-bm-WhC"/>
                             <constraint firstItem="lkS-ee-7Rc" firstAttribute="leading" secondItem="OR1-fz-EuA" secondAttribute="leading" id="Quq-xj-pvf"/>
                             <constraint firstItem="IOV-cP-5H5" firstAttribute="leading" secondItem="Fux-0d-lGS" secondAttribute="leading" id="SIc-eE-HQu"/>
@@ -273,7 +281,6 @@
                             <constraint firstItem="rEn-2l-yYj" firstAttribute="leading" secondItem="Fux-0d-lGS" secondAttribute="leading" constant="10" id="mBG-9Z-Ceh"/>
                             <constraint firstItem="tum-QW-SAH" firstAttribute="leading" secondItem="Fux-0d-lGS" secondAttribute="leading" id="maC-lc-vJd"/>
                             <constraint firstItem="mZJ-e6-9rE" firstAttribute="top" secondItem="tum-QW-SAH" secondAttribute="bottom" constant="14" id="p5S-wN-PPV"/>
-                            <constraint firstItem="428-kB-eaC" firstAttribute="centerY" secondItem="50f-DI-USl" secondAttribute="centerY" id="qBP-1c-W2R"/>
                             <constraint firstItem="IiA-Gz-HQb" firstAttribute="leading" secondItem="Fux-0d-lGS" secondAttribute="leading" id="qyF-28-8xe"/>
                             <constraint firstItem="TXi-1b-mkQ" firstAttribute="leading" secondItem="Fux-0d-lGS" secondAttribute="leading" id="wYW-7p-0hF"/>
                             <constraint firstItem="RgL-Wl-rmf" firstAttribute="leading" secondItem="Fux-0d-lGS" secondAttribute="leading" constant="16" id="was-FS-0UY"/>
@@ -287,6 +294,8 @@
                     <connections>
                         <outlet property="categoryCollectionView" destination="IiA-Gz-HQb" id="PaX-em-1PJ"/>
                         <outlet property="dateTextField" destination="EVV-kX-a7t" id="51F-no-xjn"/>
+                        <outlet property="memoTextView" destination="pWI-Kt-GuK" id="KH1-Ka-7CQ"/>
+                        <outlet property="moneyTextField" destination="arz-DY-hAB" id="ISz-Kx-uLh"/>
                         <outlet property="paymentBtn" destination="R01-Ic-WFA" id="3O6-Sy-KDF"/>
                     </connections>
                 </viewController>

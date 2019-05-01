@@ -6,6 +6,8 @@ class ExpensesViewController: UIViewController {
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var paymentBtn: UIButton!
     @IBOutlet weak var dateTextField: UITextField!
+    @IBOutlet weak var moneyTextField: UITextField!
+    @IBOutlet weak var memoTextView: UITextView!
     
     private var datePicker = UIDatePicker()
     let date = Date()
@@ -13,18 +15,28 @@ class ExpensesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         self.categoryCollectionView.dataSource = self
         self.dateformatter.dateFormat = "yyyy년 MM월 dd일 a H:mm"
         
         let stringDate = dateformatter.string(from: date)
         dateTextField.text = stringDate
         
+        moneyTextField.borderStyle = .none
         dateTextField.borderStyle = .none
         dateTextField.tintColor = UIColor.clear
-        
+    
         dateSet()
     }
+    
+    @objc func keyboardWillShow(_ sender: Notification){
+        
+    }
+    
+    @IBAction func dateFieldClicked(_ sender: UITextField) {
+        
+    }
+    
     
     func dateSet(){
         
@@ -52,7 +64,15 @@ class ExpensesViewController: UIViewController {
         view.endEditing(true)
     }
 
-
+    @IBAction func moneyDidBegin(_ sender: Any) {
+        moneyTextField.text = ""
+    }
+    
+    
+    @IBAction func moneyChanged(_ sender: Any) {
+        
+    }
+    
     @IBAction func paymentChanged(_ sender: UIButton) {
         
         let alert = UIAlertController(title: "결제방식", message: nil, preferredStyle: .actionSheet)
