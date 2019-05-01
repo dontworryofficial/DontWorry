@@ -9,6 +9,8 @@ class ExpensesViewController: UIViewController {
     @IBOutlet weak var moneyTextField: UITextField!
     @IBOutlet weak var memoTextView: UITextView!
     
+    var datePickerClass = DatePicker()
+    
     private var datePicker = UIDatePicker()
     let date = Date()
     let dateformatter = DateFormatter()
@@ -26,35 +28,39 @@ class ExpensesViewController: UIViewController {
         dateTextField.borderStyle = .none
         dateTextField.tintColor = UIColor.clear
     
-        dateSet()
+        //dateSet()
     }
+    
+    
+    
     
     @objc func keyboardWillShow(_ sender: Notification){
-        
+    
     }
     
-    @IBAction func dateFieldClicked(_ sender: UITextField) {
+    @IBAction func dateFieldClicked() {
         
+        datePickerClass.dateSet(dateTextField)
     }
     
     
-    func dateSet(){
-        
-        let toolbar = UIToolbar().ToolbarPicker(mySelect: #selector(ExpensesViewController.dateDone))
-        dateTextField.inputAccessoryView = toolbar
-
-        datePicker = UIDatePicker()
-        datePicker.datePickerMode = .dateAndTime
-        
-        dateTextField.inputView = datePicker
-        dateTextField.text = dateformatter.string(from: datePicker.date)
-        
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ExpensesViewController.viewtapped))
-        view.addGestureRecognizer(tapGesture)
-        
-        
-    }
-    
+//    func dateSet(){
+//        
+//        let toolbar = UIToolbar().ToolbarPicker(mySelect: #selector(ExpensesViewController.dateDone))
+//        dateTextField.inputAccessoryView = toolbar
+//
+//        datePicker = UIDatePicker()
+//        datePicker.datePickerMode = .dateAndTime
+//        
+//        dateTextField.inputView = datePicker
+//        dateTextField.text = dateformatter.string(from: datePicker.date)
+//        
+//        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ExpensesViewController.viewtapped))
+//        view.addGestureRecognizer(tapGesture)
+//        
+//        
+//    }
+//    
     @objc func dateDone(){
         dateTextField.text = dateformatter.string(from: datePicker.date)
         view.endEditing(true)

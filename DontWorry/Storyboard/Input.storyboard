@@ -119,7 +119,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="dateFieldClicked:" destination="Sow-FZ-jDj" eventType="editingDidEnd" id="cwV-hi-Iux"/>
+                                    <action selector="dateFieldClicked" destination="Sow-FZ-jDj" eventType="touchDown" id="SgX-CW-wf6"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결제방식" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rL-bZ-jkn">
